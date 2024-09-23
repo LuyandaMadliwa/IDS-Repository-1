@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+The resulting bar plot provides the favourite numbers of different team members, with their usernames on the x-axis, and the bar colours corresponding to the favourite colours of the relevant team member
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Usernames", 
+          y = "Favourite Numbers",
+          title = "Favourite Numbers vs. Usernames")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+The labs function allows for the editing of the axis labels as well as the heading of a barplot produced by the ggplot function
 
 ### Exercise 20
 
@@ -69,4 +69,6 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+Alternate, more efficient methods of conveying the hobbies of the entire class visually
+1. A word cloud, where the size of a given word denotes its popularity
+2. If the total number of hobbies is sufficiently low, one could make use of a pie chart 
